@@ -2,8 +2,8 @@ let form=document.querySelector('.form')
 let inputfield=document.querySelector('.search')
 let btn=document.querySelector('.submit')
 let weatherName=document.querySelector(".weatherName")
-let weatherDescription=document.querySelector('.weatherDecription')
-let degree=document.querySelector('.degree')
+let weatherDescription=document.querySelector('.weatherDescription')
+let degree=document.querySelector('.degree h6')
 let feranide=document.querySelector('.feranide')
 let cityName=document.querySelector('.cityName')
 let time=document.querySelector('.time')
@@ -33,7 +33,7 @@ updateData(weatherNameField,weatherDescriptionField,degreeField,feranideField,ci
 
 function updateData(weatherNameField,weatherDescriptionField,degreeField,feranideField,cityNameField,timeField,dayField){
 weatherName.innerText=weatherNameField
-weatherDescription.innerText=`which feels like ${weatherDescriptionField}`
+weatherDescription.innerText=`which feels like ${weatherDescriptionField}°C`
 degree.innerText=`${degreeField}°C`;
 feranide.innerText=feranideField
 cityName.innerText=cityNameField
@@ -50,6 +50,7 @@ form.addEventListener('submit',(e)=>{
 
 if(targetLocation){
     getData(targetLocation)
+    inputfield.value=""
 }else{
     alert("please enter location")
 }
