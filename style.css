@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background: url('bgimg.avif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.238);
+}
+
+nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    /* background-color: transparent; */
+}
+nav .logo{
+    background-image: url('Pngtre.png');
+    
+    height: 35px;
+    width: 35px;
+    border: 1px solid #dadada;
+    border-radius: 50%;
+background-color: #dadada;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   margin-left: 5%;
+   margin-top: 2%;
+}
+.logo-text{
+   margin-top: 2.5%; 
+   margin-left: 1.5%;
+   color: #fff;
+   font-weight: 700;
+}
+
+.input{
+    height: 60px;
+    width: 20%; 
+    /* background-color: #dadada; */
+    margin-top: 1.7%;
+    margin-left: 2%;
+    display: flex;
+    position: relative;
+
+}
+
+.form{
+    height: 60px;
+    width: 100%; 
+    /* background-color: #dadada; */
+    margin-top: 1.7%;
+    margin-left: 2%;
+    display: flex;
+    position: relative;  
+}
+
+.search{
+    height: 40px;
+    width: 80%;
+    border: none;
+    margin-top: 2%;
+    margin-left: 2%;
+    border-radius: 25px;
+    outline: none;
+    padding-left: 10px;
+    background-color: #dadada97;
+}
+.submit{
+    width: 20%;
+    height: 40px;
+    position: absolute;
+    left: 62%;
+    margin-top: 7px;
+    border-radius: 25px ;
+    outline: none;
+    border: none;
+    background-color: #dadada97;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+/* .nav-ul{
+    display: flex;
+    margin-top: 2.5%; 
+    margin-left: 4%;
+
+
+}
+.nav-ul li{
+    list-style: none;
+    color: #ffffffce;
+    padding-left: 2px;
+    font-size: 12px;
+    cursor: pointer;
+}
+li:hover{
+    color: rgb(45, 56, 151);
+    transition: 0.2s;
+} */
+.time{
+    display: flex;
+    margin-top: 2%; 
+    margin-left: 5%; 
+    color: #ffffffce;
+    padding-left: 15px;
+    font-size: 20px;
+}
+.time div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    font-size: 12px;
+    
+}
+.mode{
+    color: #fff;
+    background-color: #dadada40;
+    border-radius: 50px;
+    width: 40px;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 6px;
+    margin-top: 2%; 
+    margin-left: 2%; 
+    padding-right: 6%;
+}
+.mode i{
+    padding-left: 10px;
+}
+.day{
+    display: flex;
+    margin-top: 2%; 
+    margin-left: 5%; 
+    color: #ffffffce;
+    padding-left: 15px;
+    font-size: 20px;
+}
+.day div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    font-size: 12px; 
+    color: #ffffffce;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%; 
+    margin-left: 5%; 
+    color: #ffffffce;
+    padding-left: 15px;
+    font-size: 20px;  
+}
+.spanname{
+    width: 70px;
+    font-size: 10px;
+}
+
+/* nav end here----------------------------------------------- */
+
+.content{
+    /* background-color: #dadada; */
+    height: 80%;
+    display: flex;
+}
+
+/* left content start here */
+.content-left{   
+    /* background-color: #dadada; */
+    height: 80%;
+    width: 50%;
+    margin-left: 30px;
+    color: #fff;
+    overflow: hidden;
+}
+.text1{
+    margin-top: 30px;
+}
+.text1 .weatherName{
+    font-weight: 150;
+    font-size: 60px;
+}
+.text1 .weatherDescription{
+    font-weight: 100;
+    font-size: 30px;
+}
+.text1 .weatherText{
+    margin-top: 10px;
+    justify-content: flex-start;
+    width: 50%;
+    font-size: 12px;
+    color: #dadada;
+}
+.text2{
+    width: 80%;
+    /* background-color: aliceblue; */
+    margin-top: 40px;
+    display: flex;
+    justify-content:space-between;
+    gap: 10px;
+    color: #dadada;
+}
+.text2 .city h3{
+    font-size: 35px;
+font-weight: 20;
+color: #dadada;
+}
+
+.line1{
+    position: relative;
+
+}
+.line1{
+    position: absolute;
+    content: "";
+    width: 110px;
+    height: 2px;
+    background-color: rgb(0, 119, 255);
+    top: 120%;
+}
+#city1{
+    position: relative;
+}
+#city1::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    /* background-color: #dadada;  */
+    background-color: rgb(0, 166, 255);
+    position: absolute;
+    top: 130%;
+}
+
+
+
+.line2{
+    position: relative;
+
+}
+.line2{
+    position: absolute;
+    content: "";
+    width: 110px;
+    height: 2px;
+    background-color: rgba(255, 111, 0, 0.856);
+    top: 120%;
+}
+#city2{
+    position: relative;
+}
+#city2::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    /* background-color: #dadada;  */
+    background-color: rgb(255, 200, 0);
+    position: absolute;
+    top: 130%;
+}
+
+
+
+.line3{
+    position: relative;
+
+}
+.line3{
+    position: absolute;
+    content: "";
+    width: 110px;
+    height: 2px;
+    background-color: rgb(15, 91, 177);
+    top: 120%;
+}
+#city3{
+    position: relative;
+}
+#city3::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    /* background-color: #dadada;  */
+    background-color: rgb(84, 151, 187);
+    position: absolute;
+    top: 130%;
+}
+/* left content end here */
+
+
+/* right content start */
+
+.content-right{
+    margin-left: 20%;
+    width: 30%;
+    /* background-color: #dadada; */
+}
+
+.content-right .degree h6{
+    color: #dadada;
+    font-size: 120px;
+    font-weight: 1;
+}
+.degree h6 sup{
+    font-size: 60px;
+}
+.degree h6 sub{
+    font-size: 25px;
+}
+
+.degree-content{
+    display: flex;
+    justify-content: space-between;
+}
+.degree-content .intensity{
+    width: 60px;
+    /* background-color:olive ; */
+    font-size: 12px;
+    color: #dadadaaf;
+}
+.degree-text{
+    margin-right: 50%;
+    margin-top: 20px;
+    font-weight: bold;
+    width: 100px;
+    /* background-color:olive ; */
+    font-size: 12px;
+    color: #dadada;
+}
+.degree-text .cityName{
+    color: #dadadac0;
+    font-weight: 100;
+}
+.feranide{
+    margin-top: 25px;
+    color: #dadadaac;
+    font-size: 40px;
+    
+}
+.feranide i{
+    color: #dadada;
+}
+
+.cities{
+    display: flex;
+    text-align: none;
+
+}
+.city-list ul{
+    width: 60%;
+    height: 120%;
+    list-style: none;
+    color: #dadada;
+}
+li{
+    width: 170px;
+    /* background-color: #dadada; */
+margin-top: 20px;
+}
+
+.city-degree ul{
+    height: 120%;
+    color: #dadada;
+    margin-left: 5px;
+    list-style: none;
+    /* background-color: #dadada; */
+    width: 50px;
+}
+.city-icon {
+    margin-left: 30px;
+    width: 40px;
+    border-radius: 50px;
+    height: 120%;
+    background-color: #dadada3f;
+  
+ 
+
+}
+.city-icon ul{
+    list-style: none;
+    list-style: none;
+    /* margin-bottom: 10px; */
+    /* background-color: #dadada; */
+    overflow: hidden;
+    padding-bottom: 15px;
+   
+
+}
+.city-icon li{
+    padding-top: 1.5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    font-size: 20px;
+    /* padding: 0px  4px 0px 4px */
+}
+.city-icon li i{
+    margin-left: 7px;
+    font-size: 20px;
+    width: 200px;
+    color: #dadada;
+    border-radius: 50px;
+    background-color: #dadada99;
+
+}
+
